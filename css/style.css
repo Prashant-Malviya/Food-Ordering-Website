@@ -26,8 +26,11 @@ font-family: 'Amaranth', sans-serif;
 #navbar{
     display: flex;
     align-items: center;
-    position: relative;
+    position: absolute;
+    top: 0;
+    left: 0;
     height: 100px;
+    width: 100%;
 }
 #navbar::before{
     content: "";
@@ -45,6 +48,8 @@ font-family: 'Amaranth', sans-serif;
 }
 
 #logo img{
+    position: relative;
+    top: 4px;
     width: 84px;
     height: 70px;
     margin: 15px 10px;
@@ -87,7 +92,11 @@ font-family: 'Amaranth', sans-serif;
     padding: 10px 200px;
     justify-content: center;
     align-items: center;
-    height: 400px;
+    height: 478px;
+    position: relative;
+    top: 0;
+    left: 0;
+    height: 650px;
 }
 
 #home::before{
@@ -112,9 +121,46 @@ font-family: 'Amaranth', sans-serif;
     font-family: 'Lobster', cursive;
 
 }
+
+/* Services Section */
+
+.services-container{
+    margin:10px 0px;
+}
+
+#services{
+    margin: 34px;
+    display: flex;
+}
+#services .box{
+    border: 2px solid brown;
+    padding: 34px;
+    margin: 10px 10px;
+    border-radius: 24px;
+    background-color: #ff000030;
+    
+}
+#services .box img{
+        border-radius: 24px;
+    width: 348px;
+    height: 175px;
+    display: block;
+    margin: auto;
+}
+#services{}
+#services{}
+#services{}
+#services{}
+#services{}
+
+
 /* utility classess  */
 .h-primary{
     font-size: 3.8rem;
+    padding:12px
+}
+.h-secondary{
+    font-size: 2.8rem;
     padding:12px
 }
 
@@ -133,4 +179,7 @@ font-family: 'Amaranth', sans-serif;
     transition-duration: .5s;
     transform: scale(1.2);
     cursor: pointer;
+}
+.text-center{
+    text-align: center;
 }

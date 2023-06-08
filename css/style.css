@@ -1,0 +1,136 @@
+/* hindi font import  */
+@import url('https://fonts.googleapis.com/css2?family=Tiro+Devanagari+Hindi&display=swap');
+
+/* english fonts  */
+@import url('https://fonts.googleapis.com/css2?family=Amaranth:wght@700&family=Lobster&family=Patua+One&family=Tiro+Devanagari+Hindi&display=swap');
+
+/* font-family: 'Lobster', cursive;
+font-family: 'Patua One', cursive;
+font-family: 'Tiro Devanagari Hindi', serif; 
+font-family: 'Amaranth', sans-serif;
+*/
+
+
+/* css reset */
+*{
+    margin: 0;
+    padding: 0;
+}
+
+/* css variables  */
+:root{
+    --navbar-height:60px;
+}
+
+/* navigation bar  */
+#navbar{
+    display: flex;
+    align-items: center;
+    position: relative;
+    height: 100px;
+}
+#navbar::before{
+    content: "";
+    background-color: black;
+    position: absolute;
+    height:100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.5;
+}
+
+/* navbar logo and image  */
+#logo{
+    margin: 5px 18px;
+}
+
+#logo img{
+    width: 84px;
+    height: 70px;
+    margin: 15px 10px;
+    border-radius: 21px;
+}
+#logo p{
+    font-size: 28px;
+    position: relative;
+    bottom: 30px;
+    left: 6px;
+    font-family: 'Tiro Devanagari Hindi', serif;
+}
+
+#navbar ul{
+    display: flex;
+    margin: 0px 25px;
+}
+#navbar ul li{
+    list-style: none;
+    font-size: 1.5rem;
+}
+#navbar ul li a{
+    color: white;
+    padding: 5px 28px;
+    text-decoration: none;
+    display: block;
+    border-radius: 30px;
+    border: 2px solid brown;
+    font-family: 'Lobster', cursive;
+}
+#navbar ul li a:hover{
+    color: black;
+    background-color: white;
+}
+
+/* home section  */
+#home{
+    display: flex;
+    flex-direction: column;
+    padding: 10px 200px;
+    justify-content: center;
+    align-items: center;
+    height: 400px;
+}
+
+#home::before{
+    content: "";
+    background:url(../img/bg2.avif) no-repeat center center/cover;
+    position: absolute;
+    height:100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.7;
+}
+
+#home h1{
+    color: white;
+    text-align: center;
+    font-family: 'Amaranth', sans-serif;
+}
+#home p{
+    color: white;
+    text-align: center;
+    font-size: 1.5rem;
+    font-family: 'Lobster', cursive;
+
+}
+/* utility classess  */
+.h-primary{
+    font-size: 3.8rem;
+    padding:12px
+}
+
+.btn{
+    padding: 6px 20px;
+    color: white;
+    border: 2px solid white;
+    background-color: transparent;
+    font-family: 'Lobster';
+    font-size: 1.5rem;
+    margin: 20px;
+    border-radius: 20px;
+}
+.btn:hover{
+    background-color: #f51a1a;
+    transition-duration: .5s;
+    transform: scale(1.2);
+    cursor: pointer;
+}

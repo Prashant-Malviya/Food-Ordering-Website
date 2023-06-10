@@ -1,0 +1,166 @@
+/* Navigation section  */
+#navbar {
+    flex-direction: column;
+    width: 98%;
+}
+
+#logo img {
+    display: none;
+}
+
+#logo p {
+    position: unset;
+    font-weight: bold;
+}
+
+#navbar ul li a {
+    padding: 0px 10px;
+}
+
+#navbar ul {
+    padding-bottom: 8px;
+}
+
+/* Home section  */
+
+#home {
+    height: 590px;
+    padding: 10px 10px;
+}
+
+#home::before {
+
+    height: 136%;
+}
+
+#home p {
+    font-size: 1.5rem;
+}
+
+/* services section  */
+
+
+@media (max-width:1000px) {
+
+
+
+    #services-container {
+        margin: 12px 0px;
+    }
+
+    #services-container h1 {
+        display: block;
+        width: 100%;
+        color: white;
+        padding: 2px 0px;
+    }
+
+    #services {
+        flex-direction: column;
+        margin: 48px auto;
+        padding: 0px 0px;
+        display: block;
+    }
+
+    #services .box {
+        padding: 34px 0px;
+        margin: 12px 0px;
+        width: 350px;
+
+    }
+
+    #services .box img {
+        width: 300px;
+    }
+
+    #services .box h2 {
+        font-size: 2rem;
+    }
+
+    #services .box p {
+        font-size: 1.5rem;
+    }
+
+}
+
+/* Client Section  */
+
+#client-section {
+    overflow: hidden;
+}
+
+#clients {
+    flex-wrap: wrap;
+    padding: 5px 1px;
+
+}
+
+#clients img {
+    height: 100px;
+}
+
+/* Contact Us section  */
+
+#contact {
+    margin-bottom: 12px;
+}
+
+#contact h1 {
+    padding: 10px;
+}
+
+#contact h1 img {
+    height: 105px;
+    width: 256px;
+}
+
+#contact-box {
+    flex-direction: column;
+}
+
+#contact-box input,
+#contact-box textarea {
+    width: 94%;
+    font-size: 14px;
+}
+
+
+#contact-box form {
+    width: 300px;
+}
+
+#contact-box label {
+    font-size: 28px;
+}
+
+
+/* footer section  */
+
+/* footer div{
+    width: 360px;
+
+} */
+
+/* utility classes  */
+
+.h-primary {
+    font-size: 2rem;
+}
+
+.h-secondary {
+    font-size: 1.4rem;
+}
+
+.btn {
+
+    font-size: 1rem;
+    padding: 4px 10px;
+    margin: 8px;
+}
+
+.btn:hover {
+    background-color: #f51a1a;
+    transition-duration: .5s;
+    transform: scale(1.1);
+    cursor: pointer;
+}

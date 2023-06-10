@@ -17,6 +17,10 @@ font-family: 'Amaranth', sans-serif;
     padding: 0;
 }
 
+html{
+    scroll-behavior: smooth;
+}
+
 /* css variables  */
 :root {
     --navbar-height: 60px;
@@ -27,8 +31,8 @@ font-family: 'Amaranth', sans-serif;
     display: flex;
     align-items: center;
     position: relative;
-    top: 0;
-    left: 0;
+    /* top: 0;
+    left: 0; */
     height: 100px;
     width: 100%;
 }
@@ -68,14 +72,14 @@ font-family: 'Amaranth', sans-serif;
     font-family: 'Tiro Devanagari Hindi', serif;
 }
 
-#logo p:hover{
+/* #logo p:hover{
     display: block;
     margin: 0px 0px 0px 15px;
     background-color: white;
     color: black;
     transform: scale(1);
     transition-duration: .5s;
-}
+} */
 
 #navbar ul {
     display: flex;
@@ -110,8 +114,8 @@ font-family: 'Amaranth', sans-serif;
     align-items: center;
     height: 478px;
     position: relative;
-    top: 0;
-    left: 0;
+    /* top: 0;
+    left: 0; */
     height: 650px;
 }
 
@@ -145,7 +149,7 @@ font-family: 'Amaranth', sans-serif;
 
 /* Services Section */
 
-.services-container {
+#services-container {
     margin: 10px 0px;
     display: flex;
     flex-direction: column;
@@ -153,7 +157,7 @@ font-family: 'Amaranth', sans-serif;
 
 }
 
-.services-container h1{
+#services-container h1{
     color: white;
 }
 
@@ -163,7 +167,6 @@ font-family: 'Amaranth', sans-serif;
 }
 
 #services .box {
-    border: 2px solid brown;
     padding: 34px;
     margin: 10px 10px;
     border-radius: 24px;
@@ -190,8 +193,8 @@ font-family: 'Amaranth', sans-serif;
     background-color: #ff00001a;
     height: 400px;
     position: relative;
-    top: 0;
-    left: 0;
+    /* top: 0;
+    left: 0; */
 }
 
 #client-section::before{
@@ -254,11 +257,11 @@ font-family: 'Amaranth', sans-serif;
 
 #contact-box img.vert-move {
     -webkit-animation: mover 1s infinite  alternate;
-    animation: mover 1s infinite  alternate;
+    animation: mover .8s infinite  alternate;
 }
 #contact-box img.vert-move {
     -webkit-animation: mover 1s infinite  alternate;
-    animation: mover 1s infinite  alternate;
+    animation: mover .8s infinite  alternate;
 }
 @-webkit-keyframes mover {
     0% { transform: translateY(0); }
@@ -298,12 +301,6 @@ font-family: 'Amaranth', sans-serif;
     color: white;
 }
 
-footer{
-    background-color: lightsalmon;
-    color: white;
-    padding:5px 20px;
-}
-
 #contact h1{
     padding: 25px;
 }
@@ -312,6 +309,12 @@ footer{
     height: 120px;
     width: 358px;
 }
+
+/* footer{
+    background-color: rgb(237 0 0 / 44%);
+    color: white;
+    padding:5px 20px;
+} */
 /* utility classess  */
 .h-primary {
     font-size: 3.8rem;

@@ -310,11 +310,11 @@ html{
     width: 358px;
 }
 
-/* footer{
+footer{
     background-color: rgb(237 0 0 / 44%);
     color: white;
     padding:5px 20px;
-} */
+}
 /* utility classess  */
 .h-primary {
     font-size: 3.8rem;
